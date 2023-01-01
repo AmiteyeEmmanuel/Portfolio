@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const env = require('dotenv').config();
+const serverless = require('serverless-http');
 
 // using express
 const app = express();
@@ -56,6 +57,7 @@ app.post("/success.html", function(req, res){
     })
 })
 
+
 // make the app to listen on asigned port number
 app.listen(port, function(err){
     if(err){
@@ -64,3 +66,5 @@ app.listen(port, function(err){
 
     console.log(`Server is running on port : ${port}`);
 });
+
+
