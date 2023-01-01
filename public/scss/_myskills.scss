@@ -1,0 +1,91 @@
+    .skills {
+        padding-top: 3.75rem;
+        padding-bottom: 5.75rem;
+        .skills__group {
+            display: grid;
+            transition: all 0.3s;
+            grid-gap: 20px;
+            @include tablet {
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            display: grid;
+            @include desktop {
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 1230px;
+                align-items: center;
+                align-items: center;
+                justify-content: center;
+                margin: 2.5rem auto;
+            }
+            &--card {
+                height: 100%;
+                padding: 30px;
+                background-color: $secondary;
+                margin: 0 0 1.5rem 0;
+                color: $primary;
+                border: 3px solid $primary;
+                border-radius: 0.3rem;
+                -webkit-border-radius: 0.3rem;
+                -moz-border-radius: 0.3rem;
+                -ms-border-radius: 0.3rem;
+                -o-border-radius: 0.3rem;
+                text-transform: uppercase;
+                @include desktop {
+                    max-width: 400px;
+                }
+                p {
+                    color: $primary;
+                }
+                &:nth-child(1) {
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 1;
+                        opacity: 0.5;
+                        background: url('../images/svg/front-end-full.svg') no-repeat;
+                        background-size: 80%;
+                        background-position: right -90px top -40px;
+                    }
+                }
+                &:nth-child(2) {
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 1;
+                        opacity: 0.5;
+                        background: url('../images/svg/back-end-full.svg') no-repeat;
+                        background-size: 75%;
+                        background-position: right -90px top -60px;
+                    }
+                }
+                &:nth-child(3) {
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        z-index: 1;
+                        opacity: 0.5;
+                        background: url('../images/svg/Designer-full.svg') no-repeat;
+                        background-size: 75%;
+                        background-position: right -90px top 40px;
+                    }
+                }
+            }
+        }
+    }

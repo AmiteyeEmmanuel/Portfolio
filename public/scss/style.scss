@@ -1,0 +1,23 @@
+@import "reset";
+@import "mixins";
+@import "global";
+@import "bottomnav";
+@import "header";
+@import "myskills";
+@import "recent";
+@import "about";
+@import "contact";
+// sceko
+.scrolltotop {
+    display: inline;
+    align-items: center;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 1000;
+}

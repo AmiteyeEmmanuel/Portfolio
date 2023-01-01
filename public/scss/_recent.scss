@@ -1,0 +1,102 @@
+.project {
+    padding-top: 3.75rem;
+    background-color: $primary;
+    position: relative;
+    .project h3 {
+        color: $secondary;
+    }
+    .project__container {
+        .lSPager {
+            display: none;
+        }
+        .project__carousel--inner {
+            @include tablet {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 25px;
+            }
+            .carousel--first {
+                margin: 20px 0;
+                p {
+                    padding-bottom: 40px;
+                    color: $secondary;
+                }
+                .btn--recent {
+                    padding: 5px 30px;
+                    border: 2px solid $secondary;
+                    color: $secondary;
+                    border-radius: 0.3rem;
+                    -webkit-border-radius: 0.3rem;
+                    -moz-border-radius: 0.3rem;
+                    -ms-border-radius: 0.3rem;
+                    -o-border-radius: 0.3rem;
+                    transition: all 0.2s ease-in-out;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -moz-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+                    -o-transition: all 0.2s ease-in-out;
+                    &:hover {
+                        color: #fff;
+                        border-color: #fff;
+                    }
+                }
+            }
+            .carousel--second {
+                padding-top: 3.75rem;
+                display: none;
+                @include tablet {
+                    display: block;
+                    padding-top: 1.2rem;
+                    width: 100%;
+                }
+            }
+        }
+        #nav {
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 3.75rem;
+            #prev,
+            #next {
+                justify-content: flex-end;
+                cursor: pointer;
+                margin: 3px;
+                transform: scale(0.9);
+                -webkit-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                transition: all 0.2s ease-in-out;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                @include desktop {
+                    position: absolute;
+                    top: 50%;
+                }
+                &:hover {
+                    transform: scale(1.2);
+                    -webkit-transform: scale(1.2);
+                    -moz-transform: scale(1.2);
+                    -ms-transform: scale(1.2);
+                    -o-transform: scale(1.2);
+                    transition: all 0.2s ease-in-out;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -moz-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+                    -o-transition: all 0.2s ease-in-out;
+                }
+            }
+            #prev {
+                @include desktop {
+                    left: 20px;
+                }
+            }
+            #next {
+                @include desktop {
+                    right: 20px;
+                }
+            }
+        }
+    }
+}

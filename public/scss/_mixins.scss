@@ -1,0 +1,72 @@
+  $tablet:768px;
+  $desktop:1200px;
+  $wide:1400px;
+  $ultra-wide:1616px;
+  $primary:#17FFBD;
+  $secondary:#000;
+  @mixin flex($direction, $justify) {
+      display: flex;
+      justify-content: $justify;
+      align-items: center;
+      flex-direction: $direction;
+  }
+  
+  @mixin poppins() {
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  @mixin stick() {
+      font-family: 'Stick No Bills', sans-serif;
+  }
+  
+  @mixin tablet {
+      @media screen and (min-width: $tablet) {
+          @content;
+      }
+  }
+  
+  @mixin desktop {
+      @media screen and (min-width: $desktop) {
+          @content;
+      }
+  }
+  
+  @mixin wide {
+      @media screen and (min-width: $wide) {
+          @content;
+      }
+  }
+  
+  @mixin ultrawide {
+      @media screen and (min-width: $ultra-wide) {
+          @content;
+      }
+  }
+  
+  @keyframes scroll {
+      0% {
+          top: -30px;
+      }
+      100% {
+          top: 10px;
+          opacity: 0;
+          ;
+      }
+  }
+  
+  @keyframes bubble {
+      from {
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+      }
+      to {
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+      }
+  }

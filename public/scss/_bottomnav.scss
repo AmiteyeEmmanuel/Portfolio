@@ -1,0 +1,34 @@
+.mobile {
+    display: block;
+    height: 80px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 3;
+    width: 100%;
+    @include flex(center, center);
+    .mobile__menu {
+        @include flex(center, center);
+        &--links {
+            @include flex(column, center);
+            margin: 10px;
+            color: $primary;
+            font-weight: 300;
+            svg {
+                height: 22px;
+                margin-bottom: 9px;
+            }
+        }
+    }
+    @include desktop {
+        display: none;
+    }
+}
+
+.mobile.mode {
+    background: $secondary;
+    svg path,
+    svg g rect {
+        fill: $primary;
+    }
+}

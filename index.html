@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to portfolio.">
+    <meta name="author" content="Amiteye Emmanuel">
+    <title>Welcome to my portfolio</title>
+    <link rel="shortcut icon" href="icon/logo-cyan.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <link rel="apple-touch-icon" href="icon/logo-cyan.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="fullcontent">
+    <a href="#" class="scrolltotop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+        <g id="Icon_feather-arrow-up-circle" data-name="Icon feather-arrow-up-circle" transform="translate(-1.5 -1.5)">
+            <path id="Path_62" data-name="Path 62" d="M33,18A15,15,0,1,1,18,3,15,15,0,0,1,33,18Z" fill="#0e0f10" stroke="#8f9dba" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            <path id="Path_63" data-name="Path 63" d="M24,18l-6-6-6,6" fill=" #8f9dba" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            <path id="Path_64" data-name="Path 64" d="M18,24V12" fill="#0e0f10" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        </svg>
+    </a>
+
+    <div class="mobile mode">
+        <ul class="mobile__menu">
+            <li>
+                <a class="mobile__menu--links" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32.149" height="25" viewBox="0 0 32.149 25">
+                    <path id="Icon_awesome-home" data-name="Icon awesome-home" d="M15.647,8.739,5.358,17.214v9.147a.893.893,0,0,0,.893.893l6.254-.016a.893.893,0,0,0,.888-.893V21a.893.893,0,0,1,.893-.893h3.572a.893.893,0,0,1,.893.893V26.34a.893.893,0,0,0,.893.9l6.252.017a.893.893,0,0,0,.893-.893V17.208L16.5,8.739A.68.68,0,0,0,15.647,8.739ZM31.9,14.5l-4.666-3.846V2.923a.67.67,0,0,0-.67-.67H23.44a.67.67,0,0,0-.67.67V6.976l-5-4.111a2.679,2.679,0,0,0-3.4,0L.242,14.5a.67.67,0,0,0-.089.943l1.423,1.73a.67.67,0,0,0,.944.091L15.647,6.451a.68.68,0,0,1,.854,0L29.629,17.264a.67.67,0,0,0,.943-.089L32,15.444A.67.67,0,0,0,31.9,14.5Z" transform="translate(0.001 -2.254)" fill=" #263548"/>
+                    </svg> ABOUT
+                </a>
+            </li>
+            <li>
+                <a class="mobile__menu--links" href="#skill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27.5" height="22" viewBox="0 0 27.5 22">
+                        <path id="Icon_awesome-project-diagram" data-name="Icon awesome-project-diagram" d="M16.5,13.75H11a1.375,1.375,0,0,0-1.375,1.375v5.5A1.375,1.375,0,0,0,11,22h5.5a1.375,1.375,0,0,0,1.375-1.375v-5.5A1.375,1.375,0,0,0,16.5,13.75ZM8.25,1.375A1.375,1.375,0,0,0,6.875,0h-5.5A1.375,1.375,0,0,0,0,1.375v5.5A1.375,1.375,0,0,0,1.375,8.25H5.488l3.144,5.5A2.741,2.741,0,0,1,11,12.375h.012L8.25,7.541V5.5h9.625V2.75H8.25ZM26.125,0h-5.5A1.375,1.375,0,0,0,19.25,1.375v5.5A1.375,1.375,0,0,0,20.625,8.25h5.5A1.375,1.375,0,0,0,27.5,6.875v-5.5A1.375,1.375,0,0,0,26.125,0Z" fill="#263548"/>
+                        </svg> SKILLS
+                </a>
+            </li>
+            <li>
+                <a class="mobile__menu--links" href="#contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="25" viewBox="0 0 22.5 25">
+                        <path id="Icon_material-perm-contact-calendar" data-name="Icon material-perm-contact-calendar" d="M24.5,4H23.25V1.5h-2.5V4h-10V1.5H8.25V4H7A2.5,2.5,0,0,0,4.5,6.5V24A2.5,2.5,0,0,0,7,26.5H24.5A2.507,2.507,0,0,0,27,24V6.5A2.507,2.507,0,0,0,24.5,4ZM15.75,7.75A3.75,3.75,0,1,1,12,11.5,3.745,3.745,0,0,1,15.75,7.75Zm7.5,15h-15V21.5c0-2.5,5-3.875,7.5-3.875S23.25,19,23.25,21.5Z" transform="translate(-4.5 -1.5)" fill=" #263548"/>
+                        </svg> PROJECTS
+                </a>
+            </li>
+            <li>
+                <a class="mobile__menu--links" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
+                        <g id="Group_95" data-name="Group 95" transform="translate(-276 -689)">
+                            <rect id="Rectangle_502" data-name="Rectangle 502" width="10" height="11" rx="4" transform="translate(276 689)" fill="#8f9dba"/>
+                            <rect id="Rectangle_503" data-name="Rectangle 503" width="10" height="11" rx="4" transform="translate(288 689)" fill="#8f9dba"/>
+                            <rect id="Rectangle_504" data-name="Rectangle 504" width="10" height="11" rx="4" transform="translate(288 702)" fill="#8f9dba"/>
+                            <rect id="Rectangle_505" data-name="Rectangle 505" width="10" height="11" rx="4" transform="translate(276 702)" fill="#8f9dba"/>
+                        </g>
+                      </svg> CONTACT
+                </a>
+            </li>
+        </ul>
+    </div>
+    <header class="hero-container">
+        <div class="container">
+            <nav class="navigation">
+                <!-- logo -->
+                <div class="logo">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                        <text transform="matrix(1.2388 0 0 1 17.6914 64.748)" class="st0 st1 st2">A</text>
+                        <text transform="matrix(1.1701 0 0 1 49.0005 71.4199)" class="st3 st4 st5">E</text>
+                    </svg>
+                </div>
+                <!-- Desktop navigation -->
+                <div class="topnav">
+                    <ul class="menu mode">
+                        <li class="menu__links">
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li class="menu__links">
+                            <a href="#skills">SKILLS</a>
+                        </li>
+                        <li class="menu__links">
+                            <a href="#services">QUALIFICATION</a>
+                        </li>
+                        <li class="menu__links">
+                            <a href="#project">PROJECTS</a>
+                        </li>
+                        <li class="menu__links">
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                        <li class="menu__links">
+                            <a class="cta" href="#">RESUME</a>
+                        </li>
+                    </ul>
+                    <!-- darkmode -->
+                    <div class="toggle">
+                        <div class="toggle--light active">
+                            <svg id="_804-sun-outline" data-name="804-sun-outline" xmlns="http://www.w3.org/2000/svg" width="36.24" height="36.24" viewBox="0 0 36.24 36.24">
+                    <path id="Path_38" data-name="Path 38" d="M133.026,143.063a10.036,10.036,0,1,1,10.036-10.036A10.048,10.048,0,0,1,133.026,143.063Zm0-18.764a8.727,8.727,0,1,0,8.727,8.727A8.737,8.737,0,0,0,133.026,124.3Z" transform="translate(-114.906 -114.906)" fill=" #263548"/>
+                    <path id="Path_39" data-name="Path 39" d="M209.655,54.387a.655.655,0,0,1-.654-.654v-4.2a.654.654,0,1,1,1.309,0v4.2A.655.655,0,0,1,209.655,54.387Z" transform="translate(-191.534 -48.88)" fill=" #263548"/>
+                    <path id="Path_40" data-name="Path 40" d="M82.6,83.241a.652.652,0,0,1-.462-.192l-5.026-5.026a.655.655,0,0,1,.926-.926l5.026,5.026a.655.655,0,0,1-.464,1.118Z" transform="translate(-73.857 -73.848)" fill=" #263548"/>
+                    <path id="Path_41" data-name="Path 41" d="M53.733,210.309h-4.2a.654.654,0,1,1,0-1.309h4.2a.654.654,0,1,1,0,1.309Z" transform="translate(-48.88 -191.534)" fill="#0A2647"/>
+                    <path id="Path_42" data-name="Path 42" d="M77.579,301.331a.655.655,0,0,1-.463-1.118l5.026-5.026a.655.655,0,0,1,.926.926l-5.026,5.026A.653.653,0,0,1,77.579,301.331Z" transform="translate(-73.866 -268.149)" fill=" #263548"/>
+                    <path id="Path_43" data-name="Path 43" d="M209.655,336.138a.655.655,0,0,1-.654-.654v-4.2a.654.654,0,1,1,1.309,0v4.2A.655.655,0,0,1,209.655,336.138Z" transform="translate(-191.534 -299.897)" fill=" #263548"/>
+                    <path id="Path_44" data-name="Path 44" d="M300.7,301.341a.652.652,0,0,1-.462-.192l-5.026-5.026a.655.655,0,1,1,.926-.926l5.026,5.026a.655.655,0,0,1-.464,1.118Z" transform="translate(-268.167 -268.158)" fill=" #263548"/>
+                    <path id="Path_45" data-name="Path 45" d="M335.483,210.309h-4.2a.654.654,0,1,1,0-1.309h4.2a.654.654,0,1,1,0,1.309Z" transform="translate(-299.897 -191.534)" fill="#0A2647"/>
+                    <path id="Path_46" data-name="Path 46" d="M295.669,83.241a.655.655,0,0,1-.462-1.118l5.026-5.026a.655.655,0,0,1,.926.926l-5.026,5.026A.653.653,0,0,1,295.669,83.241Z" transform="translate(-268.167 -73.848)" fill=" #263548"/>
+                </svg>
+                        </div>
+                        <!-- moon -->
+                        <div class="toggle--dark  ">
+                            <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="26.928" height="26.105" viewBox="0 0 26.928 26.105">
+                            <g id="Subtraction_1" data-name="Subtraction 1" fill="none" stroke-linecap="round">
+                                <path d="M12.894,26.1A14.053,14.053,0,0,1,0,17.619,14.037,14.037,0,0,0,21.2,5.548,13.939,13.939,0,0,0,20.057,0a14.121,14.121,0,0,1,4.979,5.028A14.029,14.029,0,0,1,12.894,26.1Z" stroke="none"/>
+                                <path d="M 12.89448547363281 26.10494232177734 C 10.09864330291748 26.10494232177734 7.398600101470947 25.28504180908203 5.086271286010742 23.73388481140137 C 3.971428632736206 22.98602867126465 2.969814300537109 22.0833568572998 2.10927152633667 21.05095672607422 C 1.242957234382629 20.01165771484375 0.5333000421524048 18.85712814331055 3.923688751683585e-08 17.61945724487305 C 2.159228563308716 18.9034423828125 4.635842800140381 19.58225631713867 7.162371635437012 19.58225631713867 C 14.90069961547852 19.58225631713867 21.19631385803223 13.28665733337402 21.19631385803223 5.548314094543457 C 21.19631385803223 3.621442556381226 20.81294250488281 1.754714012145996 20.05685806274414 -2.676827648429025e-07 C 22.11242866516113 1.222328305244446 23.83391380310059 2.960956811904907 25.03551483154297 5.027685642242432 C 25.64445686340332 6.075057029724121 26.11474227905273 7.197242736816406 26.43332862854004 8.363071441650391 C 26.7618579864502 9.565314292907715 26.92842864990234 10.81291389465332 26.92842864990234 12.07118511199951 C 26.92842864990234 13.96574306488037 26.55737113952637 15.80362796783447 25.82557106018066 17.53378486633301 C 25.11872863769531 19.20492744445801 24.1068286895752 20.70574188232422 22.81797218322754 21.99457168579102 C 21.52912902832031 23.28341484069824 20.02827072143555 24.2952995300293 18.35711479187012 25.00211334228516 C 16.62695693969727 25.73390007019043 14.7890567779541 26.10494232177734 12.89448547363281 26.10494232177734 Z" stroke="none" fill="#fff"/>
+                            </g>
+                        </svg>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </nav>
+            <!-- Hero section -->
+            <div class="hero">
+                <h2 data-aos="slide-right" data-aos-once="true" data-aos-delay="50">Hi, I'm</h2>
+                <h2 data-aos="slide-right" data-aos-once="true" data-aos-delay="100">Amiteye Emmanuel</h2>
+                <h1 data-aos="slide-right" data-aos-once="true" data-aos-delay="150">A Certified Web-Developer</h1>
+                <p data-aos="slide-right"> Specialized in building aesthetic web solutions. <br> I’m focused on building accessible website and learning new skills that will bring about great development on the web. </p>
+                <div class="social__links">
+                    <a data-aos="slide-right" href="#"> <img src="images/svg/linkedin.svg" alt="linkedin" class="social"></a>
+                    <a data-aos="slide-right" href="#"> <img src="images/svg/whatsapp.svg" alt="whatsapp" class="social"></a>
+                    <a data-aos="slide-right" href="#"> <img src="images/svg/twitter.svg" alt="twitter" class="social"></a>
+                    <a data-aos="slide-right" href="#"> <img src="images/svg/instagram.svg" alt="Instagram" class="social"></a>
+                    <a data-aos="slide-right" href="#"> <img src="images/svg/github.svg" alt="Github" class="social"></a>
+                </div>
+                <a href="#skill" class="scrolldown">
+                    <svg id="scroll" xmlns="http://www.w3.org/2000/svg" width="23.939" height="31.507" viewBox="0 0 23.939 31.507">
+                    <path id="Path_47" data-name="Path 47" d="M98.962,115.764a.565.565,0,0,1-.355-.122l-11.443-9.293a.558.558,0,0,1,.7-.869l11.1,9,11.023-8.807a.561.561,0,0,1,.785.084.571.571,0,0,1-.084.785l-11.378,9.087A.55.55,0,0,1,98.962,115.764Z" transform="translate(-86.954 -105.354)" fill="#263548"/>
+                    <path id="Path_48" data-name="Path 48" d="M98.962,169.792a.564.564,0,0,1-.355-.122l-11.443-9.293a.554.554,0,0,1-.084-.785.563.563,0,0,1,.785-.084l11.1,9,11.023-8.807a.561.561,0,0,1,.785.084.571.571,0,0,1-.084.785l-11.378,9.087A.55.55,0,0,1,98.962,169.792Z" transform="translate(-86.954 -149.334)" fill=" #263548"/>
+                    <path id="Path_49" data-name="Path 49" d="M98.962,223.764a.564.564,0,0,1-.355-.122l-11.443-9.293a.558.558,0,0,1,.7-.869l11.1,9,11.023-8.807a.558.558,0,0,1,.7.869l-11.378,9.087A.55.55,0,0,1,98.962,223.764Z" transform="translate(-86.954 -192.257)" fill=" #263548"/>
+                </svg>
+                    <p>scroll down</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- my skill -->
+    <main>
+        <!-- about me -->
+        <div id="about" class="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div data-aos="fade-up" class="global__title about1">
+                        <h3>about me</h3>
+                    </div>
+
+                    <div class="about__hero">
+                        <div data-aos="fade-right" class="about__hero--image">
+                            <img class="img_11" src="images/img/website/Emmanuel11.png" alt=" ">
+                        </div>
+                        <div data-aos="fade-left " class="about__hero--text ">
+                            <p> Hello! My name is Emmanuel Amiteye and I enjoy creating things that live on the internet.<br> My interest in web development started back in 2011 as a young boy growing up, My Enthusiatic passion for technologies has given
+                                me a reason to strive hard in learning skills that will help me in the future.</p>
+                            <p> Currently, I'm a <strong> certified fullstack developer,</strong> focused on delivering beautiful, accessible and usable products for my clients.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <section class="skills section " id="skills ">
+            <div class="global__title ">
+                <h3>My skills</h3>
+                <span class="section__subtitle ">
+                    My_Favorite_Skills
+                </span>
+            </div>
+
+            <div class="skills__container container grid section__border ">
+                <!-- Skills  1-->
+                <div data-aos="flip-left " data-aos-offset="300 " data-aos-easing="ease-in-sine " class="skills__content ">
+                    <h4 class="skills__title ">
+                        FRONT-END DEVELOPER
+                    </h4>
+
+                    <div class="skills__info ">
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/html-1.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> Html </h4>
+                            <span class="skills__subtitle "> Intermediate</span>
+                        </div>
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/css-3.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> Css</h4>
+                            <span class="skills__subtitle "> Intermediate</span>
+                        </div>
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/logo-javascript.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> JavaScript</h4>
+                            <span class="skills__subtitle ">Intermediate</span>
+                        </div>
+
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/react-2.svg " alt="skills image ">
+                            </div>
+                            <h4 class="skills__name "> React</h4>
+                            <span class="skills__subtitle ">Basic</span>
+                        </div>
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/git-icon.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> Git</h4>
+                            <span class="skills__subtitle "> Intermediate</span>
+                        </div>
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/bootstrap-svgrepo-com.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> Bootstrap</h4>
+                            <span class="skills__subtitle "> Intermediate</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Skills 1 -->
+
+                <!-- Skills 2 -->
+                <div data-aos="flip-right " data-aos-offset="300 " data-aos-easing="ease-in-sine " class="skills__content ">
+                    <h4 class="skills__title ">
+                        Back-end Developer
+                    </h4>
+
+
+                    <div class="skills__info ">
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/nodejs-svgrepo-com.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> NodeJS </h4>
+                            <span class="skills__subtitle "> Basic</span>
+                        </div>
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/icons8-express-js.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> ExpressJS</h4>
+                            <span class="skills__subtitle "> Basic</span>
+                        </div>
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/icons8-firebase.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> Firebase</h4>
+                            <span class="skills__subtitle ">Intermediate</span>
+                        </div>
+
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/icons8-heroku.svg " alt="skills image ">
+                            </div>
+                            <h4 class="skills__name "> Heroku</h4>
+                            <span class="skills__subtitle ">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/icons8-mongodb.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> MongoDb</h4>
+                            <span class="skills__subtitle "> Basic</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Skills 3 -->
+                <div data-aos="flip-up " data-aos-offset="300 " data-aos-easing="ease-in-sine " class="skills__content ">
+                    <h4 class="skills__title ">
+                        DESIGN_TOOLS
+                    </h4>
+
+                    <div class="skills__info ">
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/adobe-photoshop-2.svg " alt="skills image ">
+                            </div>
+                            <h4 class="skills__name "> Adobe <br> Photo-shop </h4>
+                            <span class="skills__subtitle "> Basic</span>
+                        </div>
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/icons8-adobe-illustrator.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> Adobe <br> Illustrator</h4>
+                            <span class="skills__subtitle "> Basic </span>
+                        </div>
+
+                        <div class="skills__data ">
+                            <div class="skills__blob ">
+                                <img src="images/svg/figma-1.svg " alt="skills image ">
+
+                            </div>
+                            <h4 class="skills__name "> Figma <br>/ Canva</h4>
+                            <span class="skills__subtitle "> Intermediate</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="other_skills ">
+                <h2 class="other_title "> Other_Skills</h2>
+                <p> Learning New skills is one of my biggest goal as a developer. The Drive to learn new skills is what makes tech interesting.</p>
+                <div class="other_skills__container container grid section__border ">
+                    <div data-aos="flip-right " data-aos-offset="300 " data-aos-easing="ease-in-sine " class="skills__content ">
+                        <h4 class="skills__title ">
+                            New Skills
+                        </h4>
+                        <div class="skills__info ">
+                            <div class="skills__data ">
+                                <div class="skills__blob ">
+                                    <img src="images/svg/web3.svg " alt="skills image ">
+
+                                </div>
+                                <h4 class="skills__name "> WEB3 </h4>
+                            </div>
+
+                            <div class="skills__data ">
+                                <div class="skills__blob ">
+                                    <img src="images/svg/nextjs.svg " alt="skills image ">
+
+                                </div>
+                                <h4 class="skills__name "> NEXTJS</h4>
+                            </div>
+
+                            <div class="skills__data ">
+                                <div class="skills__blob ">
+                                    <img src="images/svg/solidity.svg " alt="skills image ">
+
+                                </div>
+                                <h4 class="skills__name "> SOLIDITY</h4>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Qualification -->
+        <section class="qualification section " id="services ">
+            <h2 class="section__title "> Qualification </h2>
+            <h2 class="section__subtitle "> Experience & Education </h2>
+
+            <div class="qualification__container container grid section__border ">
+                <!-- Qualification -->
+                <div class="qualification__content ">
+                    <h3 class="qualification__title ">
+                        Education
+                    </h3>
+
+                    <div class="qualification__info ">
+                        <div>
+                            <h4 class="qualification__name ">
+                                Bachelor of Science <br> (Computer Science)
+                            </h4>
+                            <span class="qualification__country "> Nigeria - Benson Idahosa University</span>
+                            <span class="qualification__year "> 2017 - 2021</span> <br>
+                            <span class="qualification__certification "> Certificate Achieved: <br> B.Sc (CGPA: 4.42/5.00) </span>
+
+                        </div>
+
+                        <div>
+                            <h4 class="qualification__name ">
+                                Certified Full-stack Developer
+                            </h4>
+                            <span class="qualification__country "> Nigeria - Udemy </span>
+                            <span class="qualification__year "> 2021- 2022</span> <br>
+                            <span class="qualification__certification "> Certificate Achieved: <br> Certified Full-stack Developer </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qualification 2 -->
+                <div class="qualification__content ">
+                    <h3 class="qualification__title ">
+                        Work
+                    </h3>
+
+                    <div class="qualification__info ">
+                        <div>
+                            <h4 class="qualification__name ">
+                                FRONT-END DEVELOPER
+                            </h4>
+                            <span class="qualification__country "> Nigera </span>
+                            <span class="qualification__year "> 2018 -Present</span>
+                        </div>
+
+                        <div>
+                            <h4 class="qualification__name ">
+                                I.T JUNIOR HARDWARE
+                            </h4>
+                            <span class="qualification__country "> Shell Contract Company <br> (Jireh) - NIgeria</span>
+                            <span class="qualification__year ">2019 -2020</span>
+                        </div>
+
+                        <div>
+                            <h4 class="qualification__name ">
+                                BACK-END ADMIN/UI/UX
+                            </h4>
+                            <span class="qualification__country "> Balky E-commerce Ltd </span>
+                            <span class="qualification__year "> 2022-2023</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="services section " id="services ">
+            <h4 class="section__title ">
+                Services
+            </h4>
+
+            <div class="service__container container grid section__border ">
+                <div data-aos="fade-right " class="service__card ">
+                    <h4 class="service__title ">
+                        Web-Developer <br> Front-end Developer
+                    </h4>
+
+                    <p class="service__description ">
+                        I provide my client with services that will satisfy that interest and make sure i deliver quality website at the request of my client, with professional work and customer support.
+                    </p>
+
+                </div>
+
+                <div data-aos="fade-up " class="service__card ">
+                    <h4 class="service__title ">
+                        Web-Developer <br> Back-end Developer
+                    </h4>
+
+                    <p class="service__description ">
+                        I provide my client with services that will satisfy that interest and make sure i deliver quality website at the request of my client, with professional work and customer support.
+                    </p>
+
+                </div>
+
+                <div data-aos="fade-left " class="service__card ">
+                    <h4 class="service__title ">
+                        UI/UX<br> Design
+                    </h4>
+
+                    <p class="service__description ">
+                        Creating Designs/Satisfying clients with design is one of the important part of UI/UX. Without good UI your website won't be consider by people so design is a key part in tech.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <div data-aos="fade-right" id="project" class="project">
+            <div class="container">
+                <div class="global__title project1">
+                    <h3>Recent Work</h3>
+                </div>
+                <div class="project__container">
+                    <ul id="autoWidth">
+                        <li>
+                            <div class="project__carousel--inner ">
+                                <div data-aos="slide-left " class="carousel--first ">
+                                    <h5>D_Magic_Store E-commerce Website</h5>
+                                    <p> D_magic Store is an E-commerce website build and design for easy shopping for clothes and accessories from the comfort of your home, office or anywhere you are. <br>
+                                        <span> Tools/Tech Used: Html, Css, JavaScript/Vanilla.Js(Framework) E-commerce Front-end-Template </span>
+                                    </p>
+                                    <a href="https://dmagicstore.netlify.app/ " class="btn--recent ">Visit site</a>
+                                </div>
+                                <div data-aos="slide-left " data-aos-delay="400 " class="carousel--second ">
+                                    <img src="images/img/website/Dmagic.png " alt=" E-commerce website" class="second1" />
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Number 2 -->
+                        <li>
+                            <div class="project__carousel--inner ">
+                                <div class="carousel--first ">
+                                    <h5>AE_BLOGS</h5>
+                                    <p> The AE_BLOGS(Amiteye Emmanuel Blog) is a MusicBlog template design for the lover of all type of music, to share their feelings, passion, love and taste for music. This project is an inspiration for my love of music
+                                        and that music is what defines ones mood. So never stop listening to your favorite jam. <br>
+                                        <Span> Tools/Tech Used: Ejs, Css, JavaScript, Node(Express.js) Firebase.</Span> </p>
+
+                                    <a href=" " class="btn--recent ">Visit site</a>
+                                </div>
+                                <div class="carousel--second ">
+                                    <img src="images/img/website/Blog.png " alt="MusicBlog" class="second1" />
+                                </div>
+                            </div>
+                        </li>
+                        <!-- number 3 -->
+                        <li>
+                            <div class="project__carousel--inner ">
+                                <div class="carousel--first ">
+                                    <h5>West-ton Hostel</h5>
+                                    <p>Build and design with React, I enjoyed using react for this project. After much consideration react was the best option for a more flexible approach and i listened to my friends advice, React.js is definitely a good
+                                        front-end tool for developing/building a website.</p>
+                                    <a href="https://west-ton.netlify.app/ " class="btn--recent ">Visit Site</a>
+                                </div>
+                                <div class="carousel--second ">
+                                    <img src="images/img/website/westton.png " alt="westton Hotel" class="second1" />
+                                </div>
+                            </div>
+                        </li>
+                        <!-- number 4 -->
+                        <li>
+                            <div class="project__carousel--inner">
+                                <div class="carousel--first">
+                                    <h5>Ideus Furniture</h5>
+                                    <p>
+                                        Ideus furniture is a furniture company that design and make functional furniture for both offices and homes. They wanted a e-commerce website that they could use to sell their products online. I collaborated with a friend to built this website. The website
+                                        was built wordpress and woo commerce.
+                                    </p>
+                                    <a href="https://home.ideus.ng/" class="btn--recent">Visit Site</a>
+                                </div>
+                                <div class="carousel--second">
+                                    <img src="images/img/website/homeidues4@2x.jpg" alt="ideus" class="second1" />
+                                </div>
+                            </div>
+                        </li>>
+                    </ul>
+                    <div id="nav">
+                        <div id="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <g id="Group_49" data-name="Group 49" transform="translate(-1246 -1625)">
+                            <rect id="Rectangle_453" data-name="Rectangle 453" width="52" height="52" rx="10" transform="translate(1246 1625)" fill="#131313"/>
+                            <g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(1254.5 1633.5)">
+                            <path id="Path_9" data-name="Path 9" d="M28.5,18H7.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            <path id="Path_10" data-name="Path 10" d="M18,28.5,7.5,18,18,7.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            </g>
+                        </g>
+                        </svg>
+                        </div>
+                        <!-- next botton -->
+                        <div id="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <g id="Group_48" data-name="Group 48" transform="translate(-1186 -1625)">
+                            <rect id="Rectangle_452" data-name="Rectangle 452" width="52" height="52" rx="10" transform="translate(1186 1625)" fill="#131313"/>
+                            <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(1194.5 1633.5)">
+                            <path id="Path_7" data-name="Path 7" d="M7.5,18h21" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            <path id="Path_8" data-name="Path 8" d="M18,7.5,28.5,18,18,28.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            </g>
+                        </g>
+                        </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent works -->
+
+        <!-- Contact me -->
+        <div id="contact " class="contact ">
+            <div class="container ">
+                <div class="contact__main ">
+                    <div data-aos="fade-up " class="global__title ">
+                        <h3>Contact me</h3>
+                    </div>
+                    <div class="contact__main__wrapper ">
+                        <div class="contact__main__wrapper--one ">
+                            <p data-aos="slide-right " class="large ">Get In Touch</p>
+                            <p data-aos="slide-right ">Available for either freelance projects or fulltime job</p>
+                            <div class="email__details ">
+                                <div class="email ">
+                                    <svg data-aos="slide-right " xmlns="http://www.w3.org/2000/svg " width="30 " height="24 " viewBox="0 0 30 24 ">
+                                <path id="Icon_material-email " data-name="Icon material-email " d="M30,6H6A3,3,0,0,0,3.015,9L3,27a3.009,3.009,0,0,0,3,3H30a3.009,3.009,0,0,0,3-3V9A3.009,3.009,0,0,0,30,6Zm0,6L18,19.5,6,12V9l12,7.5L30,9Z " transform="translate(-3
+                                -6) " fill="#8f9dba "/>
+                                </svg>
+                                    <p data-aos="slide-right " class="email--name ">
+                                        Email
+                                    </p>
+                                </div>
+                                <p data-aos="slide-right ">Emmanuelamiteye9@gmail.com</p>
+                            </div>
+                            <div class="location__details ">
+                                <div class="location ">
+                                    <svg data-aos="slide-right " xmlns="http://www.w3.org/2000/svg " width="36 " height="36 " viewBox="0 0 36 36 ">
+                                    <path id="Icon_awesome-location-arrow " data-name="Icon awesome-location-arrow " d="M31.255.248,2.021,13.74A3.409,3.409,0,0,0,3.37,20.262H15.739V32.631A3.409,3.409,0,0,0,22.26,33.98L35.753,4.745a3.508,3.508,0,0,0-4.5-4.5Z
+                                " transform="translate(0) " fill="#8f9dba "/>
+                                    </svg>
+                                    <p data-aos="slide-right " class="location--name ">
+                                        Location
+                                    </p>
+                                </div>
+                                <p data-aos="slide-right ">Lagos, Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="contact__main__wrapper--two ">
+                            <form action="/success.html " name="contact " method="post " data-netlify="true " id="contact-form ">
+                                <div>
+                                    <input type="text " name="user_name " id="contact-name " required>
+                                    <label for="name ">Your__Name</label>
+                                    <div id="errname " class="err "></div>
+                                </div>
+
+                                <div>
+                                    <input type="email " name="user_email " id="email ">
+                                    <label for="email ">Email</label>
+
+                                </div>
+                                <div>
+                                    <textarea required name="user_message " placeholder=" " id="message "></textarea>
+                                    <label for="message ">Message</label>
+
+                                </div>
+                                <input id="submit" type="submit" value="Submit">
+                                <div id="erremail" class="err"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="dark ">
+        <div class="container ">
+            <div class="footer__wrapper ">
+                <!-- <div class="logo ">
+                    <svg version="1.0 " id="Layer_1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="100 " height="100 " viewBox="0 0 100 100 " style="enable-background:new 0 0 100 100; " xml:space="preserve ">
+                        <text transform="matrix(1.2388 0 0 1 17.6914 64.748) " fill="#0e0f10 " class="st1 st2 ">A</text>
+                        <text transform="matrix(1.1701 0 0 1 49.0005 71.4199) " fill="#0e0f10 " class="st4 st5 ">E</text>
+                    </svg>
+                </div> -->
+
+                <div class="copyright ">
+                    <p> Copyright @ Amiteye Emmanuel 2022 | All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="js/lightslider.js "></script>
+
+    <!-- EMAIL JS -->
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js "></script>
+    <script src="js/index.js "></script>
+</body>
+
+</html>
