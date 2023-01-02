@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const env = require('dotenv').config();
-const serverless = require('serverless-http');
 
 // using express
 const app = express();

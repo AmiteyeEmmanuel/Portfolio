@@ -1371,6 +1371,10 @@ header {
     font-weight: 600;
 }
 
+.contact_h3 {
+    margin-bottom: 1.2rem;
+}
+
 .contact .contact__main .contact__main__wrapper--one .email__details .email {
     display: -webkit-box;
     display: -ms-flexbox;
