@@ -20,4 +20,8 @@ I've kept the pages as simple as possible. Only the required sections are includ
 This website was Built with: 
 FRONT-END DEVELOPMENT: HTML, CSS, SCSS, JAVASCRIPT.
 BACK-END-DEVELOPMENT: NODEJS(Express.Js), Nodemailer, Javascript.
+LIGHT MODE:
+![Portfolio_light](https://user-images.githubusercontent.com/97501475/210205476-b045f5dd-ef33-4e2d-b08e-118e6dda43fd.png)
 
+DARK MODE:
+![Portfolio_Dark ](https://user-images.githubusercontent.com/97501475/210205525-c43acc9f-70a5-4e07-8fed-93acf9583289.png)
