@@ -27,6 +27,25 @@ $(document).ready(function() {
     });
 });
 
+//Menu bar
+const mobileMenu = document.getElementById('mobile');
+const navToggle = document.getElementById('nav-toogle');
+const navClose = document.getElementById('nav-close');
+
+if(navToggle){
+    navToggle.addEventListener('click', () => {
+        mobileMenu.classList.add('active')
+    })
+}
+
+if(navClose){
+    navClose.addEventListener('click', () => {
+        mobileMenu.classList.remove('active')
+    })
+}
+
+
+
 
 // dark theme
 let bodyDark = document.querySelector('body');
@@ -90,55 +109,3 @@ let height = footer.offsetHeight;
 successheight.style.height = 90 - (height / 10) + "vh";
 
 
-// netlify form data fordocument.querySelector("form").addEventListener("submit", handleSubmit);
-// document.querySelector("form").addEventListener("submit", handleSubmit);
-
-// const handleSubmit = (e) => {
-//     e.preventDefault()
-//     let myForm = document.getElementById('contact');
-//     let formData = new FormData(myForm)
-//     fetch('/', {
-//         method: 'POST',
-//         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-//         body: new URLSearchParams(formData).toString()
-//     }).then(() => console.log('Form successfully submitted')).catch((error) =>
-//         alert(error))
-// }
-
-
-// EMAIL JS
-const contactForm = document.getElementById('contact-form"');
-   const contactName = document.getElementById('contact-name');
-   const contactEmail = document.getElementById('email');
-   const contactMessage = document.getElementById('message');
-
-   const sendEmail = (e) => {
-    e.preventDefault()
-
-    // Check if the field has a value
-    if(contactName.value === '' || contactEmail.value === '' || contactMessage.value === ''){
-            //Add and remove color 
-    contactMessage.classList.remove('color-blue')
-    contactMessage.classList.add('color-red')
-    
-    //show message
-    contactMessage.textContent = 'Write all input fields'
-    }else {
-        // serviceID - templateID - #form - publicKey
-        emailjs.sendForm('service_jz2m009', 'template_f9kqnyb', '#contact-form', 'crq3hnSimjD3k01rl')
-         .then(() => {
-            // Show message and add color
-            contactMessage.classList.add('color-blue')
-            contactMessage.textContent = 'Message sent'
-
-            // Remove message after five seconds
-            setTimeout(() => {
-                contactMessage.textContent = ''
-            }, 5000)
-         })
-    }
-
-
-   }
-
-   contactForm.addEventListener('submit', sendEmail)

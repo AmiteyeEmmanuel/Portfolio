@@ -29,8 +29,8 @@
         </svg>
     </a>
 
-    <div class="mobile mode">
-        <ul class="mobile__menu">
+    <div class="mobile mode" id="mobile">
+        <ul class="mobile__menu" id="mobile-menu">
             <li>
                 <a class="mobile__menu--links" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32.149" height="25" viewBox="0 0 32.149 25">
@@ -45,8 +45,9 @@
                         </svg> SKILLS
                 </a>
             </li>
-            <a class="mobile__menu--links" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
+            <li>
+                <a class="mobile__menu--links" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
                         <g id="Group_95" data-name="Group 95" transform="translate(-276 -689)">
                             <rect id="Rectangle_502" data-name="Rectangle 502" width="10" height="11" rx="4" transform="translate(276 689)" fill="#8f9dba"/>
                             <rect id="Rectangle_503" data-name="Rectangle 503" width="10" height="11" rx="4" transform="translate(288 689)" fill="#8f9dba"/>
@@ -54,7 +55,7 @@
                             <rect id="Rectangle_505" data-name="Rectangle 505" width="10" height="11" rx="4" transform="translate(276 702)" fill="#8f9dba"/>
                         </g>
                       </svg> PROJECTS
-            </a>
+                </a>
             </li>
             <li>
                 <a class="mobile__menu--links" href="#contact">
@@ -63,7 +64,9 @@
                         </svg> CONTACT
                 </a>
             </li>
-            <li>
+            <li class="close" id="nav-close">
+                <img src="images/svg/x.svg" alt="" class="close_image">
+            </li>
         </ul>
     </div>
     <header class="hero-container">
@@ -124,6 +127,11 @@
                         </div>
 
 
+                    </div>
+
+                    <!-- nav toogle_button mobile device -->
+                    <div class="nav_toogle" id="nav-toogle">
+                        <img src="images/svg/list.svg" alt="" class="menu_bar">
                     </div>
                 </div>
 
@@ -534,8 +542,8 @@
                                     <p> The AE_BLOGS(Amiteye Emmanuel Blog) is a MusicBlog template design for the lovers of all type of music, to share their feelings, passion, love and taste for music. So never stop listening to your favorite jam. <br>
                                         <Span> Tools/Tech Used: Ejs, Css, JavaScript, Node(Express.js) Firebase.</Span> </p>
 
-                                    <a href="https://dmagicstore.netlify.app/ " class="btn--recent ">Visit site</a>
-                                    <a href="https://github.com/AmiteyeEmmanuel/Portfolio.git" class="btn--recent "> Github <img src="images/svg/github.svg" alt="Github" class="social"></a>
+                                    <a href="https://ae-blogs.onrender.com/" class="btn--recent ">Visit site</a>
+                                    <a href="https://github.com/AmiteyeEmmanuel/AmiteyeEmmanuel_BLOG.git" class="btn--recent "> Github <img src="images/svg/github.svg" alt="Github" class="social"></a>
                                 </div>
                                 <div class="carousel--second ">
                                     <img src="images/img/website/Blog.png " alt="MusicBlog" class="second1" />
@@ -553,7 +561,7 @@
                                     <a href="https://github.com/AmiteyeEmmanuel/Weston_Hotel.git" class="btn--recent "> Github <img src="images/svg/github.svg" alt="Github" class="social"></a>
                                 </div>
                                 <div class="carousel--second ">
-                                    <img src="images/img/website/westton.png " alt="westton Hotel" class="second1" />
+                                    <img src="images/img/website/Westton.png " alt="westton Hotel" class="second1" />
                                 </div>
                             </div>
                         </li>
