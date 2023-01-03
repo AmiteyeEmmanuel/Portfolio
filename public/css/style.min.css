@@ -445,7 +445,17 @@ body.dark .mobile.mode svg g rect {
         justify-content: center;
         gap: 1rem 1rem;
     }
-    /* .mobile__menu */
+    .cta1 {
+        position: relative;
+        right: 150px;
+        bottom: 80px;
+        border: 2px solid #fff;
+        padding: 6px;
+        border-radius: 2rem;
+    }
+    body.dark .cta1 {
+        border: 2px solid #000;
+    }
 }
 
 .mobile .mobile__menu--links {
@@ -775,13 +785,9 @@ header {
     display: grid;
     position: relative;
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
     padding: 20px 5px;
