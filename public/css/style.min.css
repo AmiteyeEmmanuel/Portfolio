@@ -534,7 +534,7 @@ header {
 
 .navigation .topnav .menu .menu__links a {
     font-weight: 600;
-    padding: 5px 20px;
+    padding: 5px 15px;
     margin: 0 5px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -1574,7 +1574,6 @@ footer {
     text-align: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    text-align: center;
 }
 
 .copyright {
@@ -1600,11 +1599,14 @@ footer .footer__wrapper {
 
 @media screen and (min-width: 1200px) {
     footer .footer__wrapper {
-        /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+    .logo1 {
+        position: relative;
+        right: 220px;
     }
 }
 
