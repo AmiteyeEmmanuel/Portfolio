@@ -34,7 +34,7 @@ app.post("/success.html", function(req, res){
         to : 'emmanuelamiteye9@gmail.com',
         name : name,
         subject : name,
-        text: message  + email, 
+        text: message + " " +  email, 
     };
     
     var transporter = nodemailer.createTransport({
