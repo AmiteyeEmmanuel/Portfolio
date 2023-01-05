@@ -423,7 +423,7 @@
         </div>
         <!-- Qualification -->
         <div class="qualification section " id="service">
-            <h2 class="section__title "> Qualification </h2>
+            <h3 class="section__title "> Qualification </h3>
             <h2 class="section__subtitle "> Experience & Education </h2>
 
             <div class="qualification__container container grid section__border ">
@@ -495,9 +495,9 @@
 
         <!-- Services -->
         <section class="services section " id="services ">
-            <h4 class="section__title ">
+            <h3 class="section__title ">
                 Services
-            </h4>
+            </h3>
 
             <div class="service__container container grid section__border ">
                 <div data-aos="fade-right " class="service__card ">
@@ -673,22 +673,22 @@
                                 <p data-aos="slide-right ">Lagos, Nigeria</p>
                             </div>
                         </div>
-                        <div class="contact__main__wrapper--two ">
-                            <form action="/success.html " name="contact " method="post " data-netlify="true " id="contact-form ">
+                        <div class="contact__main__wrapper--two">
+                            <form action="/success.html" name="contact" method="post" data-netlify="true">
+                                <input type="hidden" name="form-name" value="contact" />
                                 <div>
-                                    <input type="text " name="user_name " id="contact-name " required>
-                                    <label for="name ">Your__Name</label>
-                                    <div id="errname " class="err "></div>
-                                </div>
-
-                                <div>
-                                    <input type="email " name="user_email " id="email ">
-                                    <label for="email ">Email</label>
-
+                                    <input type="text" name="user_name" id="name" required>
+                                    <label for="name">Name</label>
+                                    <div id="errname" class="err"></div>
                                 </div>
                                 <div>
-                                    <textarea required name="user_message " placeholder=" " id="message "></textarea>
-                                    <label for="message ">Message</label>
+                                    <input type="email" name="user_email" id="email" required>
+                                    <label for="email">Email</label>
+
+                                </div>
+                                <div>
+                                    <textarea required name="user_message" placeholder=" " id="message"></textarea>
+                                    <label for="message">Message</label>
 
                                 </div>
                                 <input id="submit" type="submit" value="Submit">

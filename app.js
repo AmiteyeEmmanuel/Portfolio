@@ -28,8 +28,16 @@ app.post("/success.html", function(req, res){
     const message = req.body.user_message;
     const name = req.body.user_name;
     const email = req.body.user_email;
+
+    var mailOptions = {
+        from :email ,
+        to : 'emmanuelamiteye9@gmail.com',
+        name : name,
+        subject : name,
+        text: message  + email, 
+    };
     
-    let transporter = nodemailer.createTransport({
+    var transporter = nodemailer.createTransport({
         service : 'gmail',
         auth: {
             user: process.env.GMAIL_EMAIL,
@@ -37,19 +45,10 @@ app.post("/success.html", function(req, res){
         }
     });
 
-    let mailOption = {
-        from : 'req.body.user_email',
-        to : 'emmanuelamiteye9@gmail.com',
-        name : name,
-        email: email,
-        subject : 'New message from  '  + name,
-        text: message, 
-    };
-    transporter.sendMail(mailOption, function(err, info){
+    transporter.sendMail(mailOptions, function(err, info){
         if(err){
             console.log(err);
         }else {
-            // res.sendFile(__dirname + "/success/index.html")
             res.redirect("/success.html");
             console.log("mail sent" + info.response);
         }
