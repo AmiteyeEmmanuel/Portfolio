@@ -7,7 +7,7 @@ Build a Portfolio template called AE_BLOGS.
 Included the constants folder, where you can directly add your details and it'll get reflected throughout the application.
 
 This is a simple portfolio template and minimalistic website.
-The design is inspired by one of my big brother (OluwaTobi Emmanuel).The website is completely Open Source, you can use it for whatever purpose you want.
+The website is completely Open Source, you can use it for whatever purpose you want.
 
 
 Features
